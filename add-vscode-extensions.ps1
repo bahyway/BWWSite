@@ -28,6 +28,8 @@ $extensions =
 , "p1c2u.docker-compose"
 , "TqrHsn.vscode-docker-registry-explorer"
 , "sandipchitale.docker-dive"
+# Themes
+, "Equinusocio.vsc-community-material-theme"
 
 
 $cmd = "code --list-extensions"
