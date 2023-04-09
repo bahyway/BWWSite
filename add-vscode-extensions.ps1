@@ -35,10 +35,12 @@ $extensions =
 $cmd = "code --list-extensions"
 Invoke-Expression $cmd -OutVariable output | Out-Null
 $installed = $output -split "\s"
+$DeleteOthers = $true
 
 foreach ($ext in $extensions) {
-    if ($installed.Contains($ext)) {
-        Write-Host $ext "already installed." -ForegroundColor Gray
+    If ($DeleteOthers -and $installed.Contains($ext)) {
+        Write-Host $ext "This Extension will be deleted." -ForegroundColor Red
+        Remove-Item -PATH "$env:USERPROFILE\.vscode\extensions" -exclude "ms-vscode.PowerShell" -and "ms-vscode.PowerShell-Preview" -Recurse -Force 
     }
     else {
         Write-Host "Installing" $ext "..." -ForegroundColor White
