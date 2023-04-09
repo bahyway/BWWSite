@@ -7,7 +7,8 @@ $Exceude = "ms-vscode.PowerShell
 ,ironmansoftware.powershellprotools
 ,justin-grote.powershell-extension-pack
 ,ms-vscode.PowerShell
-,ms-vscode.PowerShell-Preview"
+,ms-vscode.PowerShell-Preview
+,wesbos.theme-cobalt2"
 $VUserprofile = "$env:USERPROFILE\.vscode\extensions"
 $VUser = "$env:USER\.vscode\extensions"
 Remove-Item -PATH $VUserprofile -exclude $Exceude -Recurse -Force 
