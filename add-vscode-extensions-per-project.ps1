@@ -18,7 +18,7 @@
 
 $extensions =
 # PowerShell Recommendation
-  "ms-vscode.PowerShell"
+"ms-vscode.PowerShell"
 , "ironmansoftware.powershellprotools"
 , "justin-grote.powershell-extension-pack"
 , "ms-vscode.PowerShell"
@@ -91,11 +91,11 @@ $installed = $output -split "\s"
 
 foreach ($ext in $extensions) {
     if ($installed.Contains($ext)) {
-        Write-Host $ext "already installed." -ForegroundColor Gray
+        Write-Host $ext "already installed." -ForegroundColor White -BackgroundColor Blue
     }
     else {
-        Write-Host "Installing" $ext "..." -ForegroundColor White
-        code --install-extension $ext
+        Write-Host "Installing" $ext "..." -ForegroundColor White -BackgroundColor Red
+        code --install-extension $ext --force
     }
 }
 
