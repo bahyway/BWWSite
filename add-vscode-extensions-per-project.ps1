@@ -17,8 +17,14 @@
 # Specify extensions to be checked & installed by modifying $extensions
 
 $extensions =
+# PowerShell Recommendation
+  "ms-vscode.PowerShell"
+, "ironmansoftware.powershellprotools"
+, "justin-grote.powershell-extension-pack"
+, "ms-vscode.PowerShell"
+, "ms-vscode.PowerShell-Preview"
 # Remote SSH & Development
-  "ms-vscode-remote.remote-ssh"
+, "ms-vscode-remote.remote-ssh"
 , "ms-vscode.remote-explorer"
 # Remote Containers (Development)
 , "ms-vscode-remote.vscode-remote-extensionpack"
