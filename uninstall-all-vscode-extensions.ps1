@@ -3,6 +3,13 @@
     C:\Users\Bahaa\.vscode\extensions
     Restart VSCode to refresh it. 
 #>
-Remove-Item -PATH "$env:USERPROFILE\.vscode\extensions" -exclude "ms-vscode.PowerShell,ms-vscode.PowerShell-Preview" -Recurse -Force 
+$Exceude = "ms-vscode.PowerShell
+,ironmansoftware.powershellprotools
+,justin-grote.powershell-extension-pack
+,ms-vscode.PowerShell
+,ms-vscode.PowerShell-Preview"
+$VUserprofile = "$env:USERPROFILE\.vscode\extensions"
+$VUser = "$env:USER\.vscode\extensions"
+Remove-Item -PATH $VUserprofile -exclude $Exceude -Recurse -Force 
 
-Remove-Item -PATH "$env:USE\.vscode\extensions" -exclude "ms-vscode.PowerShell,ms-vscode.PowerShell-Preview" -Recurse -Force 
+Remove-Item -PATH $VUser -exclude $Exceude -Recurse -Force 
