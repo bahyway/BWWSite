@@ -10,7 +10,7 @@
     7): AsciiDoc
     8): Markdown
     9): Theme (Cobalt2)
-
+NOTE : THe 'coma' needs to be in the end of the extension to split statments
 --------------------------------------------------------------------------#>
 <#------------------------------------------------------------------------#>
 # Script for batch installing Visual Studio Code extensions
@@ -18,72 +18,56 @@
 
 $extensions =
 # PowerShell Recommendation
-"ms-vscode.PowerShell"
-, "ironmansoftware.powershellprotools"
-, "justin-grote.powershell-extension-pack"
-, "ms-vscode.PowerShell"
-, "ms-vscode.PowerShell-Preview"
+"ms-vscode.PowerShell",
+"ironmansoftware.powershellprotools",
+"justin-grote.powershell-extension-pack",
+"ms-vscode.PowerShell",
+"ms-vscode.PowerShell-Preview",
 # Remote SSH & Development
-, "ms-vscode-remote.remote-ssh"
-, "ms-vscode.remote-explorer"
+"ms-vscode-remote.remote-ssh",
+"ms-vscode.remote-explorer",
 # Remote Containers (Development)
-, "ms-vscode-remote.vscode-remote-extensionpack"
+"ms-vscode-remote.vscode-remote-extensionpack",
 # Git & GitHub extensions
-, "GitHub.copilot"
-, "GitHub.copilot-labs"
-, "GitHub.vscode-pull-request-github"
-, "GitHub.codespaces"
-, "GitHub.remotehub"
-, "henriqueBruno.github-repository-manager"
-, "Serhioromano.vscode-gitflow"
-, "mhutchie.git-graph"
-, "donjayamanne.githistory"
-, "eamodio.gitlens"
-, "arturock.gitstash"
-, "Stepsize.stepsize"
-, "me-dutour-mathieu.vscode-github-actions"
-, "sysoev.vscode-open-in-github"
-# GitHub Gist Explorer
-, "k9982874.github-gist-explorer"
-, "gimenete.github-linker"
+"GitHub.copilot",
+"GitHub.copilot-labs",
+"GitHub.vscode-pull-request-github",
+"GitHub.codespaces",
+"GitHub.remotehub",
+"henriqueBruno.github-repository-manager",
+"Serhioromano.vscode-gitflow",
+"mhutchie.git-graph",
+"donjayamanne.githistory",
+"eamodio.gitlens",
+"arturock.gitstash",
+"Stepsize.stepsize",
+"me-dutour-mathieu.vscode-github-actions",
+"sysoev.vscode-open-in-github",
 # GitHub Notification
-, "fabiospampinato.vscode-github-notifications-bell"
-# GitHub Folder
-, "PeterHdd.github-folder"
-# Open in GitHub Desktop
-, "wraith13.open-in-github-desktop"
-# GitHub Pull Request Monitor
-, "erichbehrens.pull-request-monitor"
+"fabiospampinato.vscode-github-notifications-bell",
 # Python
-, "MikeShaker.python-essentials"
-, "ms-python.python"
-, "rohit-chouhan.sqlite-snippet"
-# Preview on Web Server
-, "yuichinukiyama.vscode-preview-server"
+"ms-python.python",
 # Docker Extensions
-, "ms-azuretools.vscode-docker"
-, "formulahendry.docker-explorer"
-, "george3447.docker-run"
-, "p1c2u.docker-compose"
-, "TqrHsn.vscode-docker-registry-explorer"
-, "sandipchitale.docker-dive"
+"ms-azuretools.vscode-docker",
+"formulahendry.docker-explorer",
+"george3447.docker-run",
+"TqrHsn.vscode-docker-registry-explorer",
 # PostgreSQL
-, "ckolkman.vscode-postgres"
-, "ms-ossdata.vscode-postgresql"
+"ckolkman.vscode-postgres",
 # Jekyll tools
-, "neilding.language-liquid"
-, "killalau.vscode-liquid-snippets"
+"neilding.language-liquid",
+"killalau.vscode-liquid-snippets",
 # tool to save your settings as a gist
-, "Shan.code-settings-sync"
+"Shan.code-settings-sync",
 # PDF
-, "tomoki1207.pdf"
+"tomoki1207.pdf",
 # AsciiDoc
-, "asciidoctor.asciidoctor-vscode"
+"asciidoctor.asciidoctor-vscode",
 # Markdown
-, "yzhang.markdown-all-in-one"
-, "starkwang.markdown"
+"yzhang.markdown-all-in-one",
+"starkwang.markdown",
 # Theme (Cobalt2)
-, "wesbos.theme-cobalt2"
+"wesbos.theme-cobalt2"
 
 $cmd = "code --list-extensions"
 Invoke-Expression $cmd -OutVariable output | Out-Null
