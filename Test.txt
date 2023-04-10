@@ -1,0 +1,1 @@
+Test connecting Git to GitHub Repository from the command git remote set-url https://github.com/bahyway/BWWSite
